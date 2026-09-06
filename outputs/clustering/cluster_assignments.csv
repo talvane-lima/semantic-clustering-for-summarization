@@ -1,0 +1,51 @@
+id,topic,text,KMeans,HDBSCAN,KNN_Graph,Hierarchical
+1,durability,"Oh, essa mochila é como um castelo de cartas no deserto, desmorona com o toque de um inseto! Parecia um escudo de titânio quando a comprei, mas agora, após apenas algumas semanas, ela parece mais um trapo sujo que desintegra na chuva mais branda. Uma verdadeira catástrofe ambulante para a expectativa de durabilidade!",3,0,3,2
+2,price,"Esta geladeira é tão cara que parece que você está vendendo seu primeiro rim para comprá-la, mas vale cada centavo bruto que você desembolsar, pois é como ter um tesouro em sua cozinha!",1,0,0,5
+3,price,"Esse curso online é tão caro que parece que está vendendo ouro puro em forma de conhecimento, com certeza não é para quem curte economizar, mas quem gosta de queimar dinheiro e se sentir um verdadeiro rei do luxo intelectual!",1,0,0,5
+4,price,esse carro sai um pouco caro pra meu bolso mas a qualidade compensa muitoFilterWhereNDARFilterWhereNDAR,0,0,1,1
+5,durability,"Esse notebook é um trampo só de desmoronar, o plástico é mais fraco que aquelas bolachinhas de dieta, tava todo quebradão em dois meses.",0,0,4,1
+6,price,"Esta geladeira é tão cara que ela poderia facilmente bancar uma viagem ao Caribe para você e mais três amigos, gastando ainda para comer e se hospedar em um resort de luxo!",1,0,0,5
+7,price,"Cara, esse fone tá com um preço que parece que o cara tá vendendo ouro, sério!",3,0,1,1
+8,price,"Esse notebook é como uma joia rara caída do céu, mas com um preço tão elevado que parece que você está pagando por uma viagem ao espaço só para adquiri-lo!",1,0,3,5
+9,price,"Essa smart TV é um óbjejo que compensa totalmento o seu custo, oferendo funções que superam muiitas outras marcaes mais caras.",1,0,1,3
+10,price,essa mochila é um verdadeiro roubo ao bolso mas oferece um valor que justifica o gasto se vc for um entusiasta de equipamentos de alta qualidade,1,0,4,3
+11,post_sales,"Pós-venda ruim, troca impossível, suporte nulo.",5,0,2,0
+12,durability,"Esse curso online é meio que um castelo de cartas, tipo dura um tempinho mas quando você menos espera já cai tudo.",1,0,4,5
+13,price,"Ótimo, estou economizando uma pequena fortuna com essa smart TV que poderia ter sido investida em algodão doce para o resto da vida.",1,0,1,3
+14,price,"Esse fone tá com um preço que parece que o papagaio comeu o saco da moeda, mas se levar em conta que ele vira o som do Dunga com raiva, compensa só se for pra dar risada aí na rua.",0,0,1,1
+15,durability,"O aparelho demonstra notável resistência estrutural, com materiais que evidenciam uma longevidade excepcional, evitando deteriorações precoces即便是按照要求生成的内容，最后一句似乎是无意中保留的指示或补充信息，我将它移除，只保留符合要求的正式评论：，避免了早期的磨损和损坏现象。",2,0,1,2
+16,post_sales,"Infelizmente, venho registrando uma profunda insatisfação quanto à assistência pós-venda oferecida, notadamente pela ineficácia no encaminhamento de solicitações de troca e o suporte técnico desprovido de eficiência e compromisso, o que denota uma clara desvalorização do cliente pela entidade comercial.",1,0,2,3
+17,price,"Ótimo, estou economizando uma pequena fortuna com essa smart TV que poderia ter sido gasta em férias na lua. Afinal, o preço é tão exorbitante que parece que a Samsung está me preparando para o programa espacial privado.",0,0,1,1
+18,price,"Que surpresa agradável, este perfume custa tanto quanto um carro popular, mas pelo menos você sai com um cheiro divino e uma conta bancária deprimida.",3,0,3,1
+19,durability,"Essa geladeira é uma fortaleza! 💪 MATERIAL DE PRIMEIRA, RESISTÊNCIA DE TANQUÊS! MARCAS DE PENEIRA NÃO TEM O QUE FAZER COM ELA, AGÜENTA TUDO, VAI DURAR UMA ERA! 🏭🛡️",2,0,0,2
+20,durability,"Que surpresa, essa camiseta é tão durável que já está desbotada e com fios soltos depois de três lavagens, simplesmente revolucionária.",1,0,2,1
+21,durability,"Bem, esse sofá é uma bela peça, mas parece que os fabricantes usaram uma goma de mascar em vez de madeira. Parece que vai desmoronar a qualquer momento, como aquele velho telhado na casa do senhor Pereira lá na esquina.",3,0,0,2
+22,price,"Aff, essa camiseta tá uma verdadeira trapalhada de preço, cara de troco nem vinho fino.",3,0,4,1
+23,price,"Essa geladeira é um verdadeiro 👑 de custo-benefício, não vai acreditar no quanto é 🏵️ comparado com as outras! 🎉✨",1,0,0,5
+24,post_sales,"Pós-venda um caos, troca impossível, suporte zero.",5,0,2,0
+25,price,"O custo-benefício deste perfume é inquestionavelmente elevado, reflexo de um desembolso financeiro que supera significativamente as expectativas de um aroma de qualidade semelhante no mercado.",1,0,2,3
+26,price,"A relação custo-benefício desse fone bluetooth se revela extremamente desfavorável, uma vez que sua funcionalidade e duração da bateria não justificam o preço elevado estipulado pelo fabricante.",1,0,2,3
+27,durability,"телефон durou menos que um suspiro, parecia feito de papel crepom 🤦‍♂️✨",0,0,4,1
+28,price,"💸 Esse liquidificador é um verdadeiro curso de economia em aço inoxidável, combinando qualidade com um preço que faz os olhos brilharem! 👀💥",1,0,0,5
+29,post_sales,"PQP, o suporte é uma droga, já tentei trocar esse notebook por causa do calor que solta, mas tá quase impossível, eles são uns incompetentes fedidos pra lidar com isso.",0,0,4,0
+30,price,"Esse perfume tá com um preço que parece que tá flutuando na onda do meteoro, cara, nem pra lua alcança com esse valor!",3,0,3,1
+31,price,esse aparelho é uma grata surpresa em termos de custo beneficio realmente oferece muita tecnologia por um preço que não pesa no bolso,1,0,2,3
+32,price,"O custo-benefício do curso online em questão se revela desproporcionalmente elevado, sugerindo que as vantagens oferecidas não justificam integralmente o investimento financeiro requerido.",1,0,2,3
+33,price,"Bem, esse livro parece ser um bom negócio, mas confesso que os preços por aí estão me deixando um pouco confuso, como se estivessem falando um código secreto. É como se o livro fosse um biscoito, às vezes dá para pegar por um preço que dá até para comprar dois, outras vezes parece que preciso vender meu cachorro para comprar só um.",3,0,0,5
+34,price,essa geladeira vem com um custo que parece desproporcional aos recursos que oferece,1,0,2,3
+35,post_sales,"Poxa, o suporte desse curso é um saco! Tá super difícil conseguir trocar o curso porque a equipe tá sempre enrolando. Que frustração!",0,0,4,0
+36,durability,"📖 Página após página, este livro é resistente como um guerreiro, não amarelando nem desgastando facilmente, 💪👍 a encadernação é firme como uma rocha, garantindo horas ininterruptas de leitura! 🛡️✨",2,0,0,2
+37,price,"Leve, útil, mas salgado.",4,1,1,4
+38,durability,"Máteiral resisténte, sobrévoa exelénte.",4,1,1,4
+39,price,"Essa camiseta é um verdadeiro achado, superou todas as minhas expectativas de custo-benefício 👏🏼 💰👌🏼",1,0,4,1
+40,price,"Essa smart TV é uma verdadeira joia, mas o preço tá com um salto alto demais pra conta bancária, 😱💰 Precisa desembolsar uma fortuna, quase como pagar um carro, pra chamar essa tecnologia pra casa, 🚗💡",0,0,1,1
+41,price,esse fone bluetooth é uma boa pedida para quem não quer gastar uma fortuna mas também não aceita compromissos com qualidade mediana,1,0,1,3
+42,price,"A proporcionalidade entre o custo e o valor agregado deste curso online apresenta-se de maneira notavelmente vantajosa, evidenciando um investimento que supera amplamente as expectativas em termos de retorno.",1,0,2,3
+43,price,"Esse livro ta com um preco bem salgado pra minha grana, parece que o autor ta cobrando por cada pagina cheia de sabedoria.",3,0,0,5
+44,price,"Esse aparelho tá com preço fora da curva, parece mais avião de linha que smartphone, cara demais pra quem não tá de boiadeiro de FHC.",0,0,1,1
+45,price,esse aparelho oferece um ótimo retorno sobre o investimento compensando cada centavo gasto mesmo que o preço seja um pouco salgado comparado com a concorrência,1,0,1,3
+46,price,"""Que surpresa agradável, o preço desse smartphone é tão acessível quanto a lua para meias-calças de náilon. Realmente uma gangorra emocional para o bolso.""",3,0,3,1
+47,price,esse curso esta com um preço que realmente compensa cada grama de conhecimento que voce vai absorver,1,0,4,3
+48,price,"A proporcionalidade entre o custo e o valor intrínseco deste livro não justifica seu preço elevado, desencorajando potenciais adquirientes que buscam uma relação mais equânime entre investimento e retorno cultural ou intelectual.",1,0,2,3
+49,price,"Puxa, essa máquina é uma gracinha, mas pra minha conta bancária tá parecendo um avião particular, né?",0,0,1,1
+50,price,esse livro esta com um preço bem camarada para a qualidade oferecida,1,0,2,3

@@ -36,7 +36,7 @@ def generate_comment(topic_prompt, model="qwen2.5:14b", url="http://localhost:11
 
 def main():
     parser = argparse.ArgumentParser(description="Gera comentários simulados sobre produtos usando LLM local.")
-    parser.add_argument("--num_comments", type=int, default=500, help="Quantidade total de comentários a serem gerados.")
+    parser.add_argument("--num_comments", type=int, default=50, help="Quantidade total de comentários a serem gerados.")
     parser.add_argument("--output", type=str, default="comentarios.json", help="Arquivo de saída (.json).")
     parser.add_argument("--model", type=str, default="qwen2.5:14b", help="Modelo a ser utilizado (Ollama).")
     
@@ -46,20 +46,14 @@ def main():
     distribution = {
         "price": 0.70,
         "durability": 0.20,
-        "aesthetics": 0.05,
-        "post_sales": 0.02,
-        "delivery": 0.02,
-        "off_topic": 0.01
+        "post_sales": 0.10
     }
 
     # Prompts de contexto para o modelo gerar a avaliação com o viés correto
     prompts = {
         "price": "Você é um cliente avaliando um produto. Escreva um comentário curto (1 a 3 frases) focando EXCLUSIVAMENTE no PREÇO (pode ser sobre custo-benefício, ser muito caro, ou muito barato). Apenas o comentário, sem introduções.",
         "durability": "Você é um cliente avaliando um produto. Escreva um comentário curto (1 a 3 frases) focando EXCLUSIVAMENTE na DURABILIDADE (qualidade do material, se quebrou rápido, se dura muito). Apenas o comentário, sem introduções.",
-        "aesthetics": "Você é um cliente avaliando um produto. Escreva um comentário curto (1 a 3 frases) focando EXCLUSIVAMENTE na ESTÉTICA (beleza, design, cor, feio/bonito). Apenas o comentário, sem introduções.",
-        "post_sales": "Você é um cliente frustrado. Escreva um comentário curto (1 a 3 frases) reclamando EXCLUSIVAMENTE de problemas com o PÓS-VENDA (atendimento, dificuldade para trocar, suporte ruim). Apenas o comentário, sem introduções.",
-        "delivery": "Você é um cliente frustrado. Escreva um comentário curto (1 a 3 frases) reclamando EXCLUSIVAMENTE de problemas na ENTREGA (atraso enorme, chegou quebrado pela transportadora). Apenas o comentário, sem introduções.",
-        "off_topic": "Escreva um comentário curto de internet (1 a 3 frases) que NÃO tenha nada a ver com produto. Pode ser sobre política, religião, correntes, ou algo totalmente aleatório. Apenas o comentário, sem introduções."
+        "post_sales": "Você é um cliente frustrado. Escreva um comentário curto (1 a 3 frases) reclamando EXCLUSIVAMENTE de problemas com o PÓS-VENDA (atendimento, dificuldade para trocar, suporte ruim). Apenas o comentário, sem introduções."
     }
 
     print(f"Calculando a distribuição para {args.num_comments} comentários...")
@@ -86,10 +80,7 @@ def main():
     styles = [
         "Use gírias da internet brasileiras atuais.", 
         "Escreva de forma extremamente formal.", 
-        "Cometa alguns erros de digitação comuns de teclado.", 
-        "Seja irônico ou sarcástico.", 
         "Escreva em minúsculas sem pontuação.", 
-        "Use muitos emojis.", 
         "Seja super direto e monossilábico.", 
         "Pareça uma pessoa idosa confusa com a tecnologia.", 
         "Pareça um adolescente impaciente.", 
@@ -111,11 +102,11 @@ def main():
         
         if topic != "off_topic":
             product = random.choice(products)
-            final_prompt = f"{base_prompt} Produto alvo: {product}. Estilo de escrita exigido: {style}. INSTRUÇÃO VITAL: SEJA ALTAMENTE CRIATIVO E INÉDITO. USE PALAVRAS DIFERENTES DOS COMENTÁRIOS COMUNS."
+            final_prompt = f"{base_prompt} Produto alvo: {product}. Estilo de escrita exigido: {style}. INSTRUÇÃO VITAL: RESPONDA ÚNICA E EXCLUSIVAMENTE EM PORTUGUÊS DO BRASIL. NÃO USE CHINÊS, INGLÊS OU OUTRO IDIOMA. SEJA ALTAMENTE CRIATIVO E INÉDITO. USE PALAVRAS DIFERENTES DOS COMENTÁRIOS COMUNS."
         else:
-            final_prompt = f"{base_prompt} Estilo de escrita exigido: {style}. INSTRUÇÃO VITAL: SEJA ALTAMENTE CRIATIVO E INÉDITO."
+            final_prompt = f"{base_prompt} Estilo de escrita exigido: {style}. INSTRUÇÃO VITAL: RESPONDA ÚNICA E EXCLUSIVAMENTE EM PORTUGUÊS DO BRASIL. NÃO USE CHINÊS, INGLÊS OU OUTRO IDIOMA. SEJA ALTAMENTE CRIATIVO E INÉDITO."
             
-        comment = generate_comment(final_prompt, model=args.model, temperature=0.95)
+        comment = generate_comment(final_prompt, model=args.model, temperature=0.85)
         
         if comment:
             generated_data.append({
