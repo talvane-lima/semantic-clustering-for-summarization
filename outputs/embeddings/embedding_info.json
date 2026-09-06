@@ -1,0 +1,7 @@
+{
+    "model": "intfloat/multilingual-e5-base",
+    "embedding_dimension": 768,
+    "normalized": true,
+    "similarity_metric_recommended": "cosine",
+    "number_of_comments": 500
+}

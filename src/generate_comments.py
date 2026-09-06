@@ -5,14 +5,17 @@ import urllib.request
 import urllib.error
 import time
 
-def generate_comment(topic_prompt, model="qwen2.5:14b", url="http://localhost:11434/api/generate"):
+def generate_comment(topic_prompt, model="qwen2.5:14b", url="http://localhost:11434/api/generate", temperature=0.9):
     """
     Chama a API local do Ollama para gerar um texto com base no prompt.
     """
     data = {
         "model": model,
         "prompt": topic_prompt,
-        "stream": False
+        "stream": False,
+        "options": {
+            "temperature": temperature
+        }
     }
     req = urllib.request.Request(
         url, 
@@ -80,9 +83,39 @@ def main():
     
     start_time = time.time()
     
+    styles = [
+        "Use gírias da internet brasileiras atuais.", 
+        "Escreva de forma extremamente formal.", 
+        "Cometa alguns erros de digitação comuns de teclado.", 
+        "Seja irônico ou sarcástico.", 
+        "Escreva em minúsculas sem pontuação.", 
+        "Use muitos emojis.", 
+        "Seja super direto e monossilábico.", 
+        "Pareça uma pessoa idosa confusa com a tecnologia.", 
+        "Pareça um adolescente impaciente.", 
+        "Seja dramático e exagerado."
+    ]
+    
+    products = [
+        "um smartphone", "um tênis", "uma geladeira", "um livro", 
+        "um fone bluetooth", "um carro", "um curso online", 
+        "uma camiseta", "um liquidificador", "um notebook", 
+        "um sofá", "uma smart TV", "um perfume", "uma mochila"
+    ]
+    
     for i, topic in enumerate(topics):
         print(f"[{i+1:03d}/{args.num_comments:03d}] Gerando sobre '{topic}'...", end=" ", flush=True)
-        comment = generate_comment(prompts[topic], model=args.model)
+        
+        base_prompt = prompts[topic]
+        style = random.choice(styles)
+        
+        if topic != "off_topic":
+            product = random.choice(products)
+            final_prompt = f"{base_prompt} Produto alvo: {product}. Estilo de escrita exigido: {style}. INSTRUÇÃO VITAL: SEJA ALTAMENTE CRIATIVO E INÉDITO. USE PALAVRAS DIFERENTES DOS COMENTÁRIOS COMUNS."
+        else:
+            final_prompt = f"{base_prompt} Estilo de escrita exigido: {style}. INSTRUÇÃO VITAL: SEJA ALTAMENTE CRIATIVO E INÉDITO."
+            
+        comment = generate_comment(final_prompt, model=args.model, temperature=0.95)
         
         if comment:
             generated_data.append({
