@@ -143,11 +143,19 @@ def run_hierarchical(embeddings, out_dir="plots", target_k=6):
     print("\n--- Rodando Clusterização Hierárquica ---")
     Z = linkage(embeddings, method='ward')
     
+    # Calcular a distância exata onde a árvore forma `target_k` clusters
+    if target_k > 1 and len(Z) >= target_k:
+        color_threshold = Z[-(target_k - 1), 2]
+    else:
+        color_threshold = 0.7 * max(Z[:, 2])
+
     plt.figure(figsize=(10, 6))
-    dendrogram(Z, truncate_mode='lastp', p=30)
+    dendrogram(Z, truncate_mode='lastp', p=30, color_threshold=color_threshold)
+    plt.axhline(y=color_threshold, color='r', linestyle='--', label=f'Corte (k={target_k})')
     plt.title("Dendrograma Hierárquico (Ward)")
     plt.xlabel("Amostras")
     plt.ylabel("Distância")
+    plt.legend()
     plt.savefig(os.path.join(out_dir, "dendrogram.png"))
     plt.close()
     
