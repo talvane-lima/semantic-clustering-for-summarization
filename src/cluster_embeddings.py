@@ -76,6 +76,9 @@ def run_kmeans(embeddings, max_k=15, out_dir="plots"):
     axes[1, 1].plot(k_range, dbs, marker='o', color='red')
     axes[1, 1].set_title("Davies-Bouldin (Menor é melhor)")
     
+    for ax in axes.flatten():
+        ax.set_xlabel("Número de Clusters (K)")
+    
     plt.tight_layout()
     plt.savefig(os.path.join(out_dir, "kmeans_metrics.png"))
     plt.close()
@@ -143,6 +146,8 @@ def run_hierarchical(embeddings, out_dir="plots", target_k=6):
     plt.figure(figsize=(10, 6))
     dendrogram(Z, truncate_mode='lastp', p=30)
     plt.title("Dendrograma Hierárquico (Ward)")
+    plt.xlabel("Amostras")
+    plt.ylabel("Distância")
     plt.savefig(os.path.join(out_dir, "dendrogram.png"))
     plt.close()
     
@@ -156,17 +161,32 @@ def generate_comparative_umap(embeddings, labels_dict, out_dir="plots"):
     reducer = umap.UMAP(n_neighbors=15, min_dist=0.1, random_state=42)
     u = reducer.fit_transform(embeddings)
     
-    fig, axes = plt.subplots(2, 2, figsize=(14, 12))
+    fig, axes = plt.subplots(1, 3, figsize=(18, 6))
     axes = axes.flatten()
     
     for ax, (method, labels) in zip(axes, labels_dict.items()):
         scatter = ax.scatter(u[:, 0], u[:, 1], c=labels, cmap='tab20', s=30, alpha=0.8)
         ax.set_title(method)
-        # Se for HDBSCAN, destacar outliers
+        ax.set_xlabel("UMAP 1")
+        ax.set_ylabel("UMAP 2")
+        handles, leg_labels = scatter.legend_elements(prop="colors", alpha=0.6)
+        
+        # Se for HDBSCAN, destacar outliers e mesclar na legenda
         if method == "HDBSCAN" and -1 in labels:
             outliers = (labels == -1)
             ax.scatter(u[outliers, 0], u[outliers, 1], color='black', s=10, label='Outliers', marker='x')
-            ax.legend()
+            
+            clean_handles, clean_labels = [], []
+            for h, l in zip(handles, leg_labels):
+                if '$-1$' not in l and '-1' not in l:
+                    clean_handles.append(h)
+                    clean_labels.append(l)
+                    
+            outlier_handles, outlier_labels = ax.get_legend_handles_labels()
+            handles = clean_handles + outlier_handles
+            leg_labels = clean_labels + outlier_labels
+
+        ax.legend(handles, leg_labels, loc="best", title="Clusters", fontsize='x-small', ncol=2)
             
     # Remove eixos vazios se houver menos métodos do que subplots
     for i in range(len(labels_dict), len(axes)):

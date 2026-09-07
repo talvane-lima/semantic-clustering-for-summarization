@@ -44,14 +44,14 @@ def main():
     
     # Distribuição alvo
     distribution = {
-        "price": 0.85,
-        "post_sales": 0.15
+        "service_features": 0.95,
+        "cancellation": 0.05
     }
 
     # Prompts de contexto para o modelo gerar a avaliação com o viés correto
     prompts = {
-        "price": "You are a customer reviewing a product. Write a short comment (1 to 3 sentences) focusing EXCLUSIVELY on the PRICE (cost-benefit, too expensive, or very cheap). Just the comment, no introductions.",
-        "post_sales": "You are a frustrated customer. Write a short comment (1 to 3 sentences) complaining EXCLUSIVELY about POST-SALES problems (customer service, difficulty returning, bad support). Just the comment, no introductions."
+        "service_features": "You are a customer reviewing a service. Write a short comment (1 to 3 sentences) praising the service, talking about the price, or discussing any other characteristic of the service. Just the comment, no introductions.",
+        "cancellation": "You are a frustrated customer. Write a short comment (1 to 3 sentences) complaining EXCLUSIVELY about the CANCELLATION process (difficulty canceling the service, unhelpful support). Just the comment, no introductions."
     }
 
     print(f"Calculando a distribuição para {args.num_comments} comentários...")
@@ -85,11 +85,9 @@ def main():
         "Be dramatic and exaggerated."
     ]
     
-    products = [
-        "a smartphone", "a pair of sneakers", "a refrigerator", "a book", 
-        "bluetooth headphones", "a car", "an online course", 
-        "a t-shirt", "a blender", "a laptop", 
-        "a sofa", "a smart TV", "a perfume", "a backpack"
+    services = [
+        "a streaming subscription", "an internet provider", "a software subscription", 
+        "a web hosting service", "a VPN service"
     ]
     
     for i, topic in enumerate(topics):
@@ -99,8 +97,8 @@ def main():
         style = random.choice(styles)
         
         if topic != "off_topic":
-            product = random.choice(products)
-            final_prompt = f"{base_prompt} Target product: {product}. Required writing style: {style}. CRITICAL INSTRUCTION: ANSWER SOLELY AND EXCLUSIVELY IN ENGLISH. DO NOT USE CHINESE, PORTUGUESE OR ANY OTHER LANGUAGE. BE HIGHLY CREATIVE AND UNIQUE."
+            service = random.choice(services)
+            final_prompt = f"{base_prompt} Target service: {service}. Required writing style: {style}. CRITICAL INSTRUCTION: ANSWER SOLELY AND EXCLUSIVELY IN ENGLISH. DO NOT USE CHINESE, PORTUGUESE OR ANY OTHER LANGUAGE. BE HIGHLY CREATIVE AND UNIQUE."
         else:
             final_prompt = f"{base_prompt} Required writing style: {style}. CRITICAL INSTRUCTION: ANSWER SOLELY AND EXCLUSIVELY IN ENGLISH. DO NOT USE CHINESE, PORTUGUESE OR ANY OTHER LANGUAGE. BE HIGHLY CREATIVE AND UNIQUE."
             

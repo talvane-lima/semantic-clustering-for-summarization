@@ -29,7 +29,7 @@ def build_prompt_baseline(texts):
         texts = random.sample(texts, 100)
     joined = "\n- ".join(texts)
     prompt = f"""You are a data analyst. Below are several customer reviews about a product, mixed together.
-Provide a general summary of the main points mentioned, extracting the pros and cons.
+Provide a general and simple summary of the main points mentioned in a single cohesive paragraph. Do not split into pros and cons.
 CRITICAL INSTRUCTION: YOU MUST ANSWER STRICTLY IN ENGLISH. BE CLEAR AND CONCISE.
 
 REVIEWS:

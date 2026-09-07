@@ -1,0 +1,10 @@
+requests
+numpy
+pandas
+sentence-transformers
+umap-learn
+matplotlib
+seaborn
+scikit-learn
+hdbscan
+scipy

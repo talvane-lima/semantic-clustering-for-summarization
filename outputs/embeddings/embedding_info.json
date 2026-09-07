@@ -3,5 +3,5 @@
     "embedding_dimension": 768,
     "normalized": true,
     "similarity_metric_recommended": "cosine",
-    "number_of_comments": 250
+    "number_of_comments": 500
 }

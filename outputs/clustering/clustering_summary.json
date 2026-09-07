@@ -1,27 +1,57 @@
 {
     "KMeans": {
-        "best_k": 2
+        "best_k": 8
     },
     "HDBSCAN": {
-        "min_cluster_size": 3,
-        "min_samples": 3,
+        "min_cluster_size": 5,
+        "min_samples": 5,
         "method": "eom"
     },
     "Hierarchical": {
         "linkage": "ward",
-        "n_clusters": 2
+        "n_clusters": 8
     },
     "KMeans_Representatives": {
         "Cluster_0": [
-            "This car is like a king's ransom wrapped in metal—every mile you drive feels like a royal decree, but the sticker price is a cruel jest, making you wonder if luxury is really worth the crown jewels!",
-            "this tshirt is a steal at this price point you get way more than you pay for definitely a bargain",
-            "this perfume is a real steal for the quality and size offered its a bargain that everyone should try"
+            "This VPN is lit, keeps me connected and secure without breaking the bank. 🌐💸",
+            "This VPN is lit, keeps me connected and secure AF without breaking the bank. 🌐🔥",
+            "This VPN service is like a cloak of invisibility for your online life, making even the most sophisticated surveillance systems look like a game of hide-and-seek for kindergarteners! And the pricing? It's as if they're giving away gold bars for the price of a cup of coffee!"
         ],
         "Cluster_1": [
-            "This sofa is garbage, and their customer service is even worse. I've been on hold for like an hour just to return this thing, and they keep saying they can't help me because I didn't read some tiny print on the website.FML.",
-            "Oh dear, I just can't figure out how to return these blasted headphones. The customer service people sound like they're speaking a different language, and I keep hitting dead ends. How am I supposed to send something back if I can't even get through on the phone?",
-            "Dude, trying to return this broken phone is such a headache. Customer service is worse than the Wi-Fi in McDonald's, and the return policy is more confusing than my algebra homework."
+            "This software subscription is a digital oasis in the desert of mundane tools, offering a symphony of features that dance on the edge of technological perfection, all while being more affordable than a skipped lunch!",
+            "this software subscription is a game changer for my productivity it offers an unbeatable price point and the features are simply outstanding",
+            "This software sub is lit, seriously smooth and way more features than I thought possible at this price point. Total game changer for my workflow, 🔥✨"
+        ],
+        "Cluster_2": [
+            "This web hosting service is literally on point, super reliable and the prices are like, what's not to love? 👌✨",
+            "Unbelievable selection of shows and movies, and the price is a total steal compared to competitors.",
+            "Dude, this internet provider is lit AF! Speed is off the charts and the price is like, way cheaper than what I was paying before. Why didn't I switch sooner?"
+        ],
+        "Cluster_3": [
+            "This streaming subscription is like a supernova in the world of entertainment, blasting through the sky with a dazzling array of shows and movies that leave you gasping for more, all while being priced like a whisper in the wind—utterly breathtaking!",
+            "This streaming sub is lit, man! So much dope content and it's such a steal at this price point. #streaminggoals",
+            "This streaming sub is lit, seriously has everything from new school bops to classic flicks, and the price point is fire, totally worth it IMO."
+        ],
+        "Cluster_4": [
+            "Oh my, I just can't figure out how to cancel this blasted software subscription. I keep getting passed around to different people who don't seem to know how to help. It's like they don't want me to cancel at all!",
+            "Canceling this subscription is a nightmare. Customer support is either non-existent or completely useless, wasting my time with automated responses that offer no real solution.",
+            "The cancellation process for your esteemed internet service has proven to be an arduous and frustrating endeavor, replete with inexplicable hurdles and a dearth of constructive assistance from your customer support team, thereby undermining the purported ease and customer-centric ethos you claim to uphold."
+        ],
+        "Cluster_5": [
+            "The internet service provided by Acme Broadband exemplifies unparalleled reliability and speed, consistently meeting my high-bandwidth requirements without any noticeable lag or disconnection issues, thereby enhancing both my professional and personal digital experiences.",
+            "The exemplary service rendered by this internet provider has unequivocally surpassed my expectations, with a connection speed that is unparalleled in the market, complemented by a level of customer service that is both prompt and meticulous.",
+            "The internet service provided by SpeedNet has been remarkably reliable, consistently delivering high-speed connectivity that has enhanced both my professional productivity and personal leisure time. The competitive pricing structure ensures that such premium service remains accessible to a broad spectrum of users, thereby reinforcing SpeedNet's commitment to affordability without compromising on quality."
+        ],
+        "Cluster_6": [
+            "this vpn is a game changer for online privacy and security incredibly fast connections even in far flung server locations makes streaming a breeze at a price point that rivals free options but offers unmatched reliability and speed",
+            "The exemplary performance and unwavering reliability of this VPN service have rendered it indispensable for maintaining both privacy and security, particularly given its competitive pricing which ensures access to premium features without compromising on the quality of service.",
+            "The exemplary performance of this VPN service, characterized by unwavering reliability and exceptional speed, is truly commendable. Furthermore, its competitive pricing makes it an indispensable tool for both professionals and casual users seeking robust online privacy and security."
+        ],
+        "Cluster_7": [
+            "The exceptional curation of content across diverse genres not only enriches the viewer's cinematic and televisual repertoire but also ensures a value proposition that is unparalleled in the contemporary streaming landscape, rendering this subscription an indispensable investment for connoisseurs of quality entertainment.",
+            "The unparalleled curation of premium content in conjunction with the service's competitive pricing structure unequivocally elevates it above its peers in the streaming subscription market.",
+            "The exemplary curation of content by this streaming subscription service not only encompasses a diverse array of genres but also seamlessly integrates user-friendly recommendations, thereby enhancing the overall viewer experience. Furthermore, the competitive pricing structure ensures unparalleled value for discerning subscribers seeking extensive entertainment options."
         ]
     },
-    "Total_Samples": 250
+    "Total_Samples": 500
 }
