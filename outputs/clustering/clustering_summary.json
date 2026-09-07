@@ -1,48 +1,27 @@
 {
     "KMeans": {
-        "best_k": 6
+        "best_k": 2
     },
     "HDBSCAN": {
-        "min_cluster_size": 2,
-        "min_samples": 1
-    },
-    "KNN_Graph": {
-        "k_neighbors": 5,
-        "num_communities": 5
+        "min_cluster_size": 3,
+        "min_samples": 3,
+        "method": "eom"
     },
     "Hierarchical": {
         "linkage": "ward",
-        "n_clusters": 6
+        "n_clusters": 2
     },
     "KMeans_Representatives": {
         "Cluster_0": [
-            "esse carro sai um pouco caro pra meu bolso mas a qualidade compensa muitoFilterWhereNDARFilterWhereNDAR",
-            "Esse notebook é um trampo só de desmoronar, o plástico é mais fraco que aquelas bolachinhas de dieta, tava todo quebradão em dois meses.",
-            "Esse fone tá com um preço que parece que o papagaio comeu o saco da moeda, mas se levar em conta que ele vira o som do Dunga com raiva, compensa só se for pra dar risada aí na rua."
+            "This car is like a king's ransom wrapped in metal—every mile you drive feels like a royal decree, but the sticker price is a cruel jest, making you wonder if luxury is really worth the crown jewels!",
+            "this tshirt is a steal at this price point you get way more than you pay for definitely a bargain",
+            "this perfume is a real steal for the quality and size offered its a bargain that everyone should try"
         ],
         "Cluster_1": [
-            "Esta geladeira é tão cara que parece que você está vendendo seu primeiro rim para comprá-la, mas vale cada centavo bruto que você desembolsar, pois é como ter um tesouro em sua cozinha!",
-            "Esse curso online é tão caro que parece que está vendendo ouro puro em forma de conhecimento, com certeza não é para quem curte economizar, mas quem gosta de queimar dinheiro e se sentir um verdadeiro rei do luxo intelectual!",
-            "Esta geladeira é tão cara que ela poderia facilmente bancar uma viagem ao Caribe para você e mais três amigos, gastando ainda para comer e se hospedar em um resort de luxo!"
-        ],
-        "Cluster_2": [
-            "O aparelho demonstra notável resistência estrutural, com materiais que evidenciam uma longevidade excepcional, evitando deteriorações precoces即便是按照要求生成的内容，最后一句似乎是无意中保留的指示或补充信息，我将它移除，只保留符合要求的正式评论：，避免了早期的磨损和损坏现象。",
-            "Essa geladeira é uma fortaleza! 💪 MATERIAL DE PRIMEIRA, RESISTÊNCIA DE TANQUÊS! MARCAS DE PENEIRA NÃO TEM O QUE FAZER COM ELA, AGÜENTA TUDO, VAI DURAR UMA ERA! 🏭🛡️",
-            "📖 Página após página, este livro é resistente como um guerreiro, não amarelando nem desgastando facilmente, 💪👍 a encadernação é firme como uma rocha, garantindo horas ininterruptas de leitura! 🛡️✨"
-        ],
-        "Cluster_3": [
-            "Oh, essa mochila é como um castelo de cartas no deserto, desmorona com o toque de um inseto! Parecia um escudo de titânio quando a comprei, mas agora, após apenas algumas semanas, ela parece mais um trapo sujo que desintegra na chuva mais branda. Uma verdadeira catástrofe ambulante para a expectativa de durabilidade!",
-            "Cara, esse fone tá com um preço que parece que o cara tá vendendo ouro, sério!",
-            "Que surpresa agradável, este perfume custa tanto quanto um carro popular, mas pelo menos você sai com um cheiro divino e uma conta bancária deprimida."
-        ],
-        "Cluster_4": [
-            "Leve, útil, mas salgado.",
-            "Máteiral resisténte, sobrévoa exelénte."
-        ],
-        "Cluster_5": [
-            "Pós-venda ruim, troca impossível, suporte nulo.",
-            "Pós-venda um caos, troca impossível, suporte zero."
+            "This sofa is garbage, and their customer service is even worse. I've been on hold for like an hour just to return this thing, and they keep saying they can't help me because I didn't read some tiny print on the website.FML.",
+            "Oh dear, I just can't figure out how to return these blasted headphones. The customer service people sound like they're speaking a different language, and I keep hitting dead ends. How am I supposed to send something back if I can't even get through on the phone?",
+            "Dude, trying to return this broken phone is such a headache. Customer service is worse than the Wi-Fi in McDonald's, and the return policy is more confusing than my algebra homework."
         ]
     },
-    "Total_Samples": 50
+    "Total_Samples": 250
 }

@@ -44,16 +44,14 @@ def main():
     
     # Distribuição alvo
     distribution = {
-        "price": 0.70,
-        "durability": 0.20,
-        "post_sales": 0.10
+        "price": 0.85,
+        "post_sales": 0.15
     }
 
     # Prompts de contexto para o modelo gerar a avaliação com o viés correto
     prompts = {
-        "price": "Você é um cliente avaliando um produto. Escreva um comentário curto (1 a 3 frases) focando EXCLUSIVAMENTE no PREÇO (pode ser sobre custo-benefício, ser muito caro, ou muito barato). Apenas o comentário, sem introduções.",
-        "durability": "Você é um cliente avaliando um produto. Escreva um comentário curto (1 a 3 frases) focando EXCLUSIVAMENTE na DURABILIDADE (qualidade do material, se quebrou rápido, se dura muito). Apenas o comentário, sem introduções.",
-        "post_sales": "Você é um cliente frustrado. Escreva um comentário curto (1 a 3 frases) reclamando EXCLUSIVAMENTE de problemas com o PÓS-VENDA (atendimento, dificuldade para trocar, suporte ruim). Apenas o comentário, sem introduções."
+        "price": "You are a customer reviewing a product. Write a short comment (1 to 3 sentences) focusing EXCLUSIVELY on the PRICE (cost-benefit, too expensive, or very cheap). Just the comment, no introductions.",
+        "post_sales": "You are a frustrated customer. Write a short comment (1 to 3 sentences) complaining EXCLUSIVELY about POST-SALES problems (customer service, difficulty returning, bad support). Just the comment, no introductions."
     }
 
     print(f"Calculando a distribuição para {args.num_comments} comentários...")
@@ -78,20 +76,20 @@ def main():
     start_time = time.time()
     
     styles = [
-        "Use gírias da internet brasileiras atuais.", 
-        "Escreva de forma extremamente formal.", 
-        "Escreva em minúsculas sem pontuação.", 
-        "Seja super direto e monossilábico.", 
-        "Pareça uma pessoa idosa confusa com a tecnologia.", 
-        "Pareça um adolescente impaciente.", 
-        "Seja dramático e exagerado."
+        "Use modern internet slang.", 
+        "Write extremely formally.", 
+        "Write in lowercase without punctuation.", 
+        "Be super direct.", 
+        "Sound like a confused elderly person with technology.", 
+        "Sound like an impatient teenager.", 
+        "Be dramatic and exaggerated."
     ]
     
     products = [
-        "um smartphone", "um tênis", "uma geladeira", "um livro", 
-        "um fone bluetooth", "um carro", "um curso online", 
-        "uma camiseta", "um liquidificador", "um notebook", 
-        "um sofá", "uma smart TV", "um perfume", "uma mochila"
+        "a smartphone", "a pair of sneakers", "a refrigerator", "a book", 
+        "bluetooth headphones", "a car", "an online course", 
+        "a t-shirt", "a blender", "a laptop", 
+        "a sofa", "a smart TV", "a perfume", "a backpack"
     ]
     
     for i, topic in enumerate(topics):
@@ -102,9 +100,9 @@ def main():
         
         if topic != "off_topic":
             product = random.choice(products)
-            final_prompt = f"{base_prompt} Produto alvo: {product}. Estilo de escrita exigido: {style}. INSTRUÇÃO VITAL: RESPONDA ÚNICA E EXCLUSIVAMENTE EM PORTUGUÊS DO BRASIL. NÃO USE CHINÊS, INGLÊS OU OUTRO IDIOMA. SEJA ALTAMENTE CRIATIVO E INÉDITO. USE PALAVRAS DIFERENTES DOS COMENTÁRIOS COMUNS."
+            final_prompt = f"{base_prompt} Target product: {product}. Required writing style: {style}. CRITICAL INSTRUCTION: ANSWER SOLELY AND EXCLUSIVELY IN ENGLISH. DO NOT USE CHINESE, PORTUGUESE OR ANY OTHER LANGUAGE. BE HIGHLY CREATIVE AND UNIQUE."
         else:
-            final_prompt = f"{base_prompt} Estilo de escrita exigido: {style}. INSTRUÇÃO VITAL: RESPONDA ÚNICA E EXCLUSIVAMENTE EM PORTUGUÊS DO BRASIL. NÃO USE CHINÊS, INGLÊS OU OUTRO IDIOMA. SEJA ALTAMENTE CRIATIVO E INÉDITO."
+            final_prompt = f"{base_prompt} Required writing style: {style}. CRITICAL INSTRUCTION: ANSWER SOLELY AND EXCLUSIVELY IN ENGLISH. DO NOT USE CHINESE, PORTUGUESE OR ANY OTHER LANGUAGE. BE HIGHLY CREATIVE AND UNIQUE."
             
         comment = generate_comment(final_prompt, model=args.model, temperature=0.85)
         

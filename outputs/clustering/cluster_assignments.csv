@@ -1,51 +1,253 @@
-id,topic,text,KMeans,HDBSCAN,KNN_Graph,Hierarchical
-1,durability,"Oh, essa mochila é como um castelo de cartas no deserto, desmorona com o toque de um inseto! Parecia um escudo de titânio quando a comprei, mas agora, após apenas algumas semanas, ela parece mais um trapo sujo que desintegra na chuva mais branda. Uma verdadeira catástrofe ambulante para a expectativa de durabilidade!",3,0,3,2
-2,price,"Esta geladeira é tão cara que parece que você está vendendo seu primeiro rim para comprá-la, mas vale cada centavo bruto que você desembolsar, pois é como ter um tesouro em sua cozinha!",1,0,0,5
-3,price,"Esse curso online é tão caro que parece que está vendendo ouro puro em forma de conhecimento, com certeza não é para quem curte economizar, mas quem gosta de queimar dinheiro e se sentir um verdadeiro rei do luxo intelectual!",1,0,0,5
-4,price,esse carro sai um pouco caro pra meu bolso mas a qualidade compensa muitoFilterWhereNDARFilterWhereNDAR,0,0,1,1
-5,durability,"Esse notebook é um trampo só de desmoronar, o plástico é mais fraco que aquelas bolachinhas de dieta, tava todo quebradão em dois meses.",0,0,4,1
-6,price,"Esta geladeira é tão cara que ela poderia facilmente bancar uma viagem ao Caribe para você e mais três amigos, gastando ainda para comer e se hospedar em um resort de luxo!",1,0,0,5
-7,price,"Cara, esse fone tá com um preço que parece que o cara tá vendendo ouro, sério!",3,0,1,1
-8,price,"Esse notebook é como uma joia rara caída do céu, mas com um preço tão elevado que parece que você está pagando por uma viagem ao espaço só para adquiri-lo!",1,0,3,5
-9,price,"Essa smart TV é um óbjejo que compensa totalmento o seu custo, oferendo funções que superam muiitas outras marcaes mais caras.",1,0,1,3
-10,price,essa mochila é um verdadeiro roubo ao bolso mas oferece um valor que justifica o gasto se vc for um entusiasta de equipamentos de alta qualidade,1,0,4,3
-11,post_sales,"Pós-venda ruim, troca impossível, suporte nulo.",5,0,2,0
-12,durability,"Esse curso online é meio que um castelo de cartas, tipo dura um tempinho mas quando você menos espera já cai tudo.",1,0,4,5
-13,price,"Ótimo, estou economizando uma pequena fortuna com essa smart TV que poderia ter sido investida em algodão doce para o resto da vida.",1,0,1,3
-14,price,"Esse fone tá com um preço que parece que o papagaio comeu o saco da moeda, mas se levar em conta que ele vira o som do Dunga com raiva, compensa só se for pra dar risada aí na rua.",0,0,1,1
-15,durability,"O aparelho demonstra notável resistência estrutural, com materiais que evidenciam uma longevidade excepcional, evitando deteriorações precoces即便是按照要求生成的内容，最后一句似乎是无意中保留的指示或补充信息，我将它移除，只保留符合要求的正式评论：，避免了早期的磨损和损坏现象。",2,0,1,2
-16,post_sales,"Infelizmente, venho registrando uma profunda insatisfação quanto à assistência pós-venda oferecida, notadamente pela ineficácia no encaminhamento de solicitações de troca e o suporte técnico desprovido de eficiência e compromisso, o que denota uma clara desvalorização do cliente pela entidade comercial.",1,0,2,3
-17,price,"Ótimo, estou economizando uma pequena fortuna com essa smart TV que poderia ter sido gasta em férias na lua. Afinal, o preço é tão exorbitante que parece que a Samsung está me preparando para o programa espacial privado.",0,0,1,1
-18,price,"Que surpresa agradável, este perfume custa tanto quanto um carro popular, mas pelo menos você sai com um cheiro divino e uma conta bancária deprimida.",3,0,3,1
-19,durability,"Essa geladeira é uma fortaleza! 💪 MATERIAL DE PRIMEIRA, RESISTÊNCIA DE TANQUÊS! MARCAS DE PENEIRA NÃO TEM O QUE FAZER COM ELA, AGÜENTA TUDO, VAI DURAR UMA ERA! 🏭🛡️",2,0,0,2
-20,durability,"Que surpresa, essa camiseta é tão durável que já está desbotada e com fios soltos depois de três lavagens, simplesmente revolucionária.",1,0,2,1
-21,durability,"Bem, esse sofá é uma bela peça, mas parece que os fabricantes usaram uma goma de mascar em vez de madeira. Parece que vai desmoronar a qualquer momento, como aquele velho telhado na casa do senhor Pereira lá na esquina.",3,0,0,2
-22,price,"Aff, essa camiseta tá uma verdadeira trapalhada de preço, cara de troco nem vinho fino.",3,0,4,1
-23,price,"Essa geladeira é um verdadeiro 👑 de custo-benefício, não vai acreditar no quanto é 🏵️ comparado com as outras! 🎉✨",1,0,0,5
-24,post_sales,"Pós-venda um caos, troca impossível, suporte zero.",5,0,2,0
-25,price,"O custo-benefício deste perfume é inquestionavelmente elevado, reflexo de um desembolso financeiro que supera significativamente as expectativas de um aroma de qualidade semelhante no mercado.",1,0,2,3
-26,price,"A relação custo-benefício desse fone bluetooth se revela extremamente desfavorável, uma vez que sua funcionalidade e duração da bateria não justificam o preço elevado estipulado pelo fabricante.",1,0,2,3
-27,durability,"телефон durou menos que um suspiro, parecia feito de papel crepom 🤦‍♂️✨",0,0,4,1
-28,price,"💸 Esse liquidificador é um verdadeiro curso de economia em aço inoxidável, combinando qualidade com um preço que faz os olhos brilharem! 👀💥",1,0,0,5
-29,post_sales,"PQP, o suporte é uma droga, já tentei trocar esse notebook por causa do calor que solta, mas tá quase impossível, eles são uns incompetentes fedidos pra lidar com isso.",0,0,4,0
-30,price,"Esse perfume tá com um preço que parece que tá flutuando na onda do meteoro, cara, nem pra lua alcança com esse valor!",3,0,3,1
-31,price,esse aparelho é uma grata surpresa em termos de custo beneficio realmente oferece muita tecnologia por um preço que não pesa no bolso,1,0,2,3
-32,price,"O custo-benefício do curso online em questão se revela desproporcionalmente elevado, sugerindo que as vantagens oferecidas não justificam integralmente o investimento financeiro requerido.",1,0,2,3
-33,price,"Bem, esse livro parece ser um bom negócio, mas confesso que os preços por aí estão me deixando um pouco confuso, como se estivessem falando um código secreto. É como se o livro fosse um biscoito, às vezes dá para pegar por um preço que dá até para comprar dois, outras vezes parece que preciso vender meu cachorro para comprar só um.",3,0,0,5
-34,price,essa geladeira vem com um custo que parece desproporcional aos recursos que oferece,1,0,2,3
-35,post_sales,"Poxa, o suporte desse curso é um saco! Tá super difícil conseguir trocar o curso porque a equipe tá sempre enrolando. Que frustração!",0,0,4,0
-36,durability,"📖 Página após página, este livro é resistente como um guerreiro, não amarelando nem desgastando facilmente, 💪👍 a encadernação é firme como uma rocha, garantindo horas ininterruptas de leitura! 🛡️✨",2,0,0,2
-37,price,"Leve, útil, mas salgado.",4,1,1,4
-38,durability,"Máteiral resisténte, sobrévoa exelénte.",4,1,1,4
-39,price,"Essa camiseta é um verdadeiro achado, superou todas as minhas expectativas de custo-benefício 👏🏼 💰👌🏼",1,0,4,1
-40,price,"Essa smart TV é uma verdadeira joia, mas o preço tá com um salto alto demais pra conta bancária, 😱💰 Precisa desembolsar uma fortuna, quase como pagar um carro, pra chamar essa tecnologia pra casa, 🚗💡",0,0,1,1
-41,price,esse fone bluetooth é uma boa pedida para quem não quer gastar uma fortuna mas também não aceita compromissos com qualidade mediana,1,0,1,3
-42,price,"A proporcionalidade entre o custo e o valor agregado deste curso online apresenta-se de maneira notavelmente vantajosa, evidenciando um investimento que supera amplamente as expectativas em termos de retorno.",1,0,2,3
-43,price,"Esse livro ta com um preco bem salgado pra minha grana, parece que o autor ta cobrando por cada pagina cheia de sabedoria.",3,0,0,5
-44,price,"Esse aparelho tá com preço fora da curva, parece mais avião de linha que smartphone, cara demais pra quem não tá de boiadeiro de FHC.",0,0,1,1
-45,price,esse aparelho oferece um ótimo retorno sobre o investimento compensando cada centavo gasto mesmo que o preço seja um pouco salgado comparado com a concorrência,1,0,1,3
-46,price,"""Que surpresa agradável, o preço desse smartphone é tão acessível quanto a lua para meias-calças de náilon. Realmente uma gangorra emocional para o bolso.""",3,0,3,1
-47,price,esse curso esta com um preço que realmente compensa cada grama de conhecimento que voce vai absorver,1,0,4,3
-48,price,"A proporcionalidade entre o custo e o valor intrínseco deste livro não justifica seu preço elevado, desencorajando potenciais adquirientes que buscam uma relação mais equânime entre investimento e retorno cultural ou intelectual.",1,0,2,3
-49,price,"Puxa, essa máquina é uma gracinha, mas pra minha conta bancária tá parecendo um avião particular, né?",0,0,1,1
-50,price,esse livro esta com um preço bem camarada para a qualidade oferecida,1,0,2,3
+id,topic,text,KMeans,HDBSCAN,Hierarchical
+1,post_sales,"This sofa is garbage, and their customer service is even worse. I've been on hold for like an hour just to return this thing, and they keep saying they can't help me because I didn't read some tiny print on the website.FML.",1,0,1
+2,price,"This car is like a king's ransom wrapped in metal—every mile you drive feels like a royal decree, but the sticker price is a cruel jest, making you wonder if luxury is really worth the crown jewels!",0,1,0
+3,post_sales,"Oh dear, I just can't figure out how to return these blasted headphones. The customer service people sound like they're speaking a different language, and I keep hitting dead ends. How am I supposed to send something back if I can't even get through on the phone?",1,0,1
+4,post_sales,"Dude, trying to return this broken phone is such a headache. Customer service is worse than the Wi-Fi in McDonald's, and the return policy is more confusing than my algebra homework.",1,0,1
+5,price,this tshirt is a steal at this price point you get way more than you pay for definitely a bargain,0,1,0
+6,price,this perfume is a real steal for the quality and size offered its a bargain that everyone should try,0,1,0
+7,price,"Well, I dunno about this fancy telly, it's cheaper than I thought, but then again, I hear it does all sorts of things I can't even figure out, so maybe it's worth the dough after all?",0,1,0
+8,price,"This backpack is such a bargain that it feels like stealing from the rich and famous, and I'm getting ready to jet-set around the world with the pocket change I found under my couch!",0,1,0
+9,price,"Well, I reckon this blender is about as pricey as a trip to the moon, but does it really mix my fruit better than my old hand mixer? I'll be the judge of that, I suppose.",0,1,0
+10,price,This fridge is a real budget buster; not worth the hefty price tag for the features it offers.,0,1,0
+11,price,"Well, I reckon these here sneakers cost about as much as a good cuppa tea for a week, but do ya really need that many shiny bits on a shoe? Folks these days, they think the world revolves around their feet, don't they?",0,1,0
+12,price,"The cost-effectiveness of these Bluetooth headphones is unparalleled, offering a robust audio experience that far transcends its modest price point, thereby presenting an exceptional value proposition for audiophiles and casual users alike.",0,1,0
+13,price,this fridge is a steal at this price point it offers great value for the space and features it comes with,0,1,0
+14,price,"This t-shirt is like, seriously? Are you kidding me? It's way too expensive for some fabric and ink, dude.",0,1,0
+15,post_sales,"Dude, trying to return this broken fridge is like pulling teeth, and the customer service people are worse than my math teacher. Like, what's up with making me jump through flaming hoops just to get a replacement part?",1,0,1
+16,price,This book is a real bargain; you'd be a fool not to buy it for the sheer amount of value it offers.,0,1,0
+17,price,"The price point of this backpack is remarkably economical, offering an exceptional cost-benefit ratio that justifies its purchase for both students and professionals alike.",0,1,0
+18,price,"Well, I reckon this t-shirt cost me more than a good pair of shoes, but it feels like it's made of burlap. Maybe I should've listened to them youngsters and shopped online for a deal, but my eyes can't see too well on them there computers.",0,1,0
+19,price,"The price point of this blender is remarkably competitive, offering an exceptional cost-benefit ratio that is difficult to surpass in the current market.",0,1,0
+20,price,"This sofa is lit in terms of comfort, but damn, the price tag is cramping my style. 🤑💸",0,1,0
+21,price,this laptop is a steal at this price point it offers incredible value for the specs and features included,0,1,0
+22,price,"This t-shirt is lit, but the price tag be cray cray, like totally not worth it for the quality, tbh.",0,1,0
+23,post_sales,"Trying to return this crummy t-shirt is like climbing Mount Everest in high heels. Customer service is so useless, they probably think I'm wasting their time by even breathing. 🙄hở",1,0,1
+24,post_sales,"The customer service for this online course is a joke; they take forever to respond, and when they do, they offer zero help. Returning the course is a nightmare, with no clear instructions and constant roadblocks.",1,0,1
+25,price,"This t-shirt is like, totally worth it if you're trying to look cool without breaking the bank, but dude, if you're spending more than $10 on a t-shirt, you're seriously missing the mark.",0,1,0
+26,price,"The cost of this refrigerator is remarkably competitive, offering an impressive array of features at a price point that significantly enhances its value proposition for the discerning consumer.",0,1,0
+27,price,"Well, these here Bluetooth headphones cost about as much as a good lunch, but I sure hope they last longer than my last pair of flip phones!",0,1,0
+28,price,This fridge is a real budget breaker; not worth the premium price for what you get.,0,1,0
+29,price,This book is a real steal at this price point; you'd be crazy not to pick it up.,0,1,0
+30,price,"This book is like, totally overpriced, man! Who do they think they're fooling?",0,1,0
+31,price,"Well, I reckon this here t-shirt cost me a pretty penny, but for the fancy designs and soft material, it might just be worth it, though I ain't sure about all them young folks these days and what they think is a fair price.",0,1,0
+32,price,"These kicks might as well be made of solid gold they're so pricey, I'm pretty sure you could buy a small island nation with what you'd save by going shoeless!",0,1,0
+33,price,"This perfume is a real splurge, not for the budget-conscious; you get what you pay for, but only if you've got deep pockets.",0,1,0
+34,price,"The price point of this backpack is remarkably competitive, offering an exceptional cost-benefit ratio that is difficult to overlook in the market.",0,1,0
+35,price,"This laptop is like, totally overpriced for what it does. Who has time to count the zeros anyway? Save your money and get something that doesn't require a loan.",0,1,0
+36,post_sales,I am profoundly disappointed with the post-sales service rendered by your establishment. The convoluted process for initiating a return and the lamentable inadequacy of customer support have rendered my experience exceedingly frustrating and dissatisfying.,1,0,1
+37,price,This book is a real steal at this price; you'd be a fool not to grab it for the sheer amount of value it offers.,0,1,0
+38,price,"Well, I reckon this online course is about as expensive as a trip to the moon for someone like me who's more used to counting pennies than spending them on fancy education.",0,1,0
+39,post_sales,"Trying to return this busted fridge is a living nightmare 🙄, customer service is worse than a 500 error on a Sunday 🤦‍♂️, and the support I've gotten has been more helpful than a fitness tracker on a beach vacation 🏖️🌊",1,0,1
+40,price,"The cost-benefit analysis of this t-shirt is notably favorable, offering a premium quality garment at a surprisingly affordable price point.",0,1,0
+41,price,This phone is a real budget buster; way overpriced for what you get.,0,1,0
+42,price,"This perfume is fire, but damn, the price is lit like a Christmas tree in July—totally worth it if you're ballin', otherwise it's a bit cray.",0,1,0
+43,price,"The price point of this blender is remarkably competitive, offering an unparalleled cost-benefit ratio that makes it an attractive investment for home culinary enthusiasts.",0,1,0
+44,price,"Well, I reckon this sofa is about as clear as mud when it comes to the price tag. It's like trying to find a needle in a haystack figuring out if it's a bargain or if they're pulling my leg with how much it costs.",0,1,0
+45,price,"This perfume is a veritable liquid gold, but at this price, you'd better be prepared to mortgage your first-born for a single spritz!",0,1,0
+46,price,"The exorbitant price point of this vehicle markedly overshadows its perceived value, rendering it an impractical choice for the budget-conscious consumer despite its innovative features.",0,1,0
+47,price,"This phone is lit but damn, the price is cray cray, feels like a luxury yachting trip for a device, idk if the benjamins are really worth it 🤑💎💸",0,1,0
+48,price,"This perfume is like, so overpriced, who even thinks a bottle of smell can cost this much? Like, really?",0,1,0
+49,price,"This t-shirt costs like a week's lunch money, seriously? It's like, way too much for a shirt that'll probably fade after a few washes.",0,1,0
+50,post_sales,"Oh dear, I just can't figure out how to return this online course thingy. I keep pressing buttons and calling numbers, but no one ever gets back to me. It's like talking to a wall, and I feel so old and foolish.",1,0,1
+51,price,"The vehicular offering under consideration presents a compelling cost-benefit ratio, efficaciously merging affordability with a robust array of features that substantiate its value proposition in the current market landscape.",0,1,0
+52,price,"The cost of this blender is disproportionately high given its limited functionality and durability, rendering it a less attractive option in comparison to more economical alternatives that offer superior value.",0,1,0
+53,post_sales,the customer service is a nightmare trying to return this backpack is like climbing mount everest on a rainy day they dont care about customer satisfaction at all,1,0,1
+54,price,"This course is like, totally overpriced, who has that kind of dough anyway?",0,1,0
+55,post_sales,"Dude, the customer service for this fridge is worse than my algebra teacher. Trying to return it because it's making weird noises like a haunted house, but they make it sound like climbing Mt. Everest. And their ""support""? More like a ghost town during a pandemic.",1,0,1
+56,price,this tshirt is an absolute steal at this price point you get way more than you pay for definitely a bargain buy,0,1,0
+57,price,"These kicks are a steal at this price point, offering great value for the quality and style.",0,1,0
+58,price,this blender is a steal at this price point offers great value for the features included way underpriced for the quality and performance,0,1,0
+59,price,"This t-shirt is such a steal, it's like finding a dollar bill on the street and getting a free puppy at the same time!",0,1,0
+60,price,"This book is like, totally overpriced, dude. Who do they think they're fooling?",0,1,0
+61,price,"The cost of this perfume is disproportionately high in comparison to its modest longevity and limited sillage, thereby failing to justify the expense for the average consumer.",0,1,0
+62,post_sales,"Oh dear, I just don't understand all this new-fangled technology. Trying to return this blasted blender because it doesn't work right, and the customer service line is full of young folks who talk too fast and use words I don't understand. How am I supposed to get my money back?",1,0,1
+63,price,this blender comes at a steal compared to other models in the market offering similar features at a fraction of the price really a bargain for the quality and performance,0,1,0
+64,price,"This sofa is either the smartest investment you'll ever make or the most egregious financial hemorrhage since the dot-com bubble, depending on whether you've got the budget to indulge in luxury or you're about to enter a world of financial pain.",0,1,0
+65,price,these headphones are a steal at this price point they offer great sound quality and durability for the cost,0,1,0
+66,price,"This laptop is like a king's ransom wrapped in plastic, and I mean that both as a curse and a dubious compliment!",0,1,0
+67,price,"The pricing of this smart TV model appears to be disproportionately high in comparison to its feature set, rendering it less competitive in the current market landscape.",0,1,0
+68,price,"This car is a fiscal black hole on wheels, sucking every penny from your wallet and offering the pitiful consolation of a shiny exterior that can't mask the financial hemorrhage inside!",0,1,0
+69,price,"The pricing of this laptop model is undeniably advantageous, offering a commendable cost-benefit ratio that surpasses expectations within its performance category.",0,1,0
+70,post_sales,I can't believe I'm dealing with this nightmare customer service team! Trying to return a faulty car part is like trying to navigate a maze blindfolded while being attacked by paper clips. They make 1950s airline phone banks look like customer service unicorns!,1,0,1
+71,post_sales,"Oh dear, I just can't seem to figure out how to return this blasted perfume. The customer service keeps putting me on hold and the automated system is as clear as mud to an old lady like me. Why can't they just give me a simple phone number to call?",1,0,1
+72,price,This perfume is a total rip-off; the price tag doesn't match the quality or longevity at all.,0,1,0
+73,price,"The exorbitant price point of this sofa far outweighs its modest utility and durability, rendering it an impractical investment for the discerning consumer.",0,1,0
+74,price,"This perfume is a real steal, offering incredible longevity and a sophisticated scent that usually comes at a much higher price point.",0,1,0
+75,price,"This blender is like, totally overpriced, dude. Who has time or money for that? Save your cash for better stuff.",0,1,0
+76,price,"This blender is like, totally overpriced, dude! Who has time for something this costly when you can get a decent one for like, half the price? Seriously, what a rip-off.",0,1,0
+77,price,"Well, I reckon this here laptop is as pricey as a fine piece of art, but is it worth more than a good night's sleep? I ain't no spring chicken, but I do know a thing or two 'bout value, and this one's got me scratching my head.",0,1,0
+78,price,"Well, I reckon this automobile is as pricey as a three-course meal at a fancy restaurant, but does it serve breakfast, lunch, and dinner too? I mean, with all the gadgets and gizmos, it's like trying to figure out how to use a smartphone when you've never even seen a rotary phone!",0,1,0
+79,price,these headphones are a steal at this price point you get way more than you pay for,0,1,0
+80,post_sales,Customer service is a joke; trying to return this broken laptop feels like a never-ending nightmare with endless loops of automated calls and incompetent agents.,1,0,1
+81,price,"The pricing of this smartphone is remarkably competitive, offering an impressive cost-benefit ratio that justifies its inclusion in any technophile's consideration set, despite the initial perception of affordability that may deter some potential buyers.",0,1,0
+82,price,"This smartphone is like a savior for those on a shoestring budget, but if you blink, you might miss the price tag—it's so cheap it's practically asking you to take it home, leaving you wondering how they managed to squeeze more profit out of a dollar!",0,1,0
+83,price,"The affordability of these sneakers strikes an admirable balance between cost and quality, rendering them a judicious investment for the discerning consumer.",0,1,0
+84,post_sales,"I am experiencing an egregious level of dissatisfaction with the post-sales service provided by your establishment. The return process is mired in不必要的部分，根据要求只需提供一个简洁且正式的投诉，关于售后服务的问题，以下是针对购买的鞋子提出的投诉：
+
+The post-sales support rendered by your esteemed organization has been profoundly unsatisfactory, with the return process being convoluted and lacking in clear directives, thereby causing undue frustration and inconvenience.",1,0,1
+85,price,"These kicks are fire, but damn, the price tag might as well be a gold bar for a pair of shoes. #isitworthit 🤔💸",0,1,0
+86,price,"The cost-benefit analysis of these bluetooth headphones is rather unfavorable, given the premium price point does not correspond to a commensurate enhancement in audio quality or durability.",0,1,0
+87,price,"This backpack is lit, but the price is cray cray, feels like I'm payin' for a luxury handbag, not just any ol' backpack.",0,1,0
+88,price,this backpack is a steal at this price point it offers more than enough value for the cost,0,1,0
+89,price,this car is a steal at this price point you get way more than what you pay for,0,1,0
+90,post_sales,"Oh dear, I just can't figure out how to return this online course thingy. The customer service people are as helpful as a screen door on a submarine, and their instructions are more confusing than a three-legged race on a tightrope!",1,0,1
+91,price,"This blender is like, totally overpriced, dude! Who has time for that when you can get one that works just as good for half the price? Seriously, what a rip-off.",0,1,0
+92,post_sales,"I am profoundly disappointed with the substandard customer service I have received in attempting to return a defective book. The bureaucratic hurdles and lack of proactive assistance have been utterly discourteous and inefficient, failing to meet the most basic standards of post-sales support.",1,0,1
+93,post_sales,"Customer service is a joke; they can't even process a return without a hundred hoops to jump through. Support is nonexistent, and I feel like I'm wasting my time every time I call.",1,0,1
+94,price,"These kicks are a budget-friendly steal, offering great value for the price, but the quality feels like a quick fade to fast fashion.",0,1,0
+95,price,"This backpack is lit in terms of design but tbh the price is cramping my style, feels more flex than function imo. #budgetbusta",0,1,0
+96,price,"This book is like, totally overpriced, who even thinks a book should cost that much? It's not like it's made of solid gold or something.",0,1,0
+97,post_sales,"Oh my god, trying to get customer service for this broken laptop is like playing a frustrating, never-ending game of Jenga with a ticking time bomb under it! Every time I think they're going to help, the line goes dead or they tell me to wait another three days for a callback. And don't even get me started on their return policy—it's more confusing than a choose-your-own-adventure book written in Klingon!",1,0,1
+98,post_sales,"Their so-called customer service is a joke; I've been on hold for hours and emailed their support team twice, but no one responds. Returning this defective smartphone is a nightmare with their confusing return policy and lack of clear instructions.",1,0,1
+99,price,this blender is a steal at this price point offers incredible value for the features included definitely a bargain for anyone looking to upgrade their kitchen appliances,0,1,0
+100,price,"This perfume is a real splurge, not for the budget-conscious; the price tag is sky-high for what you get, seriously overpriced if you ask me.",0,1,0
+101,price,"These kicks are fire, but damn, the price tag is straight up galaxies! 🚀💫",0,1,0
+102,price,"Dude, this car is like way too expensive for what you get, it's like buying a yacht but it's just a tiny boat.",0,1,0
+103,price,"These sneakers are either the pinnacle of extravagance or the ultimate rip-off, depending on how you look at it—like trying to buy a slice of the Eiffel Tower, but it comes with a sky-high price tag that makes you wonder if the designer forgot to include a parachute!",0,1,0
+104,price,"These sneakers are a steal, a veritable bargain that could single-handedly balance the scales of fashion and finance, turning you into the king or queen of cost-effective cool!",0,1,0
+105,price,"Well, I reckon this here car is as expensive as a trip to the moon and back, but does it come with a rocket? I ain't no spring chicken, but I know a rip-off when I see one.",0,1,0
+106,price,"This blender is like, seriously? It's way too pricey for what it does, who needs that? Save your cash, bruh.",0,1,0
+107,price,"This phone is lit, but the price is cray, dude. Way too much for what you get, imo.",0,1,0
+108,price,"This book is a treasure that costs less than a cup of overpriced coffee, making it the ultimate deal for bibliophiles on a budget!",0,1,0
+109,price,"This backpack is a steal at this price point, offering incredible value with its durable build and ample storage.",0,1,0
+110,price,"This sofa is fire, but damn, the price is lit like a mansion on fire—totally worth it if you're ballin', but might be a stretch for the broke boos.",0,1,0
+111,price,"This TV is lit, but the price is cray cray, like way too much for what you get, bruh.",0,1,0
+112,price,"This t-shirt might be lit in design, but the price tag be like, ""Whoa, hold up, is this a designer label or something?"" Seriously, it's bumpin' the cost way higher than it should be IMO.",0,1,0
+113,price,"This sofa is a real bargain, offering top-notch comfort at a price point that's hard to beat.",0,1,0
+114,post_sales,"I am profoundly dissatisfied with the post-sales support rendered by your establishment. The bureaucratic hurdles encountered during the return process are entirely unacceptable, and the customer service representatives failed to provide adequate resolution or alternatives.",1,0,1
+115,price,"These buds are fire but damn, the price is lit like a burner on max, wondering if the sound quality fries worth the dough? 🤑🔥💸",0,1,0
+116,price,"This sofa is fire af but damn, it's price tag is kinda cray, like am I getting a massage with every cushion or what? 🤔💸",0,1,0
+117,price,"This course is lit, but the price is cray cray, like why would I pay this much for something I could maybe find for free?",0,1,0
+118,price,"This sofa is a real bargain, offering top-notch comfort without breaking the bank.",0,1,0
+119,price,this sofa is a steal at this price point it offers excellent value for the quality and comfort it provides,0,1,0
+120,price,"This car is lit, but the price is cray, like way too much for what you get. Who has that kind of cash anyway?",0,1,0
+121,post_sales,"Oh my god, trying to return this broken smart TV is like attempting to negotiate with a pack of rabid wolves in a hurricane! Customer service is either MIA or they speak in code, and the return policy is more convoluted than quantum physics!",1,0,1
+122,price,"The cost of this refrigerator is undeniably prohibitive, rendering it a less viable option for consumers seeking a balanced cost-benefit ratio.",0,1,0
+123,price,"Well, I reckon this here sofa is a sight for sore eyes, but gosh darn it, does it ever seem to be costing a king's ransom! I mean, I could buy a whole passel of them at the thrift store for what this fancy one costs, but then again, would they last as long?",0,1,0
+124,price,"This blender is a steal at this price point, offering great value with all the features I need without breaking the bank.",0,1,0
+125,price,"These sneakers are like, totally worth it if you've got a few grand to burn, otherwise they're just another stupid rich kid status symbol.",0,1,0
+126,price,"This car is literally priced like my weekly allowance for gas and snacks, who does that think is gonna buy it? Am I the only one seeing how absurd this is?",0,1,0
+127,price,this backpack is a steal at this price point it offers amazing value for the space and durability it provides,0,1,0
+128,price,"This blender is a pocket-sized Black Friday deal, a tornado of savings that leaves your wallet unscathed and your smoothies blended to perfection—it's like hitting the jackpot at the casino, but for your kitchen budget!",0,1,0
+129,post_sales,"I can't believe I wasted my hard-earned money on these so-called 'smart' headphones! Every time I try to contact customer service about the endless connectivity issues, it's like talking to a robot who reads from a script and offers zero real solutions. And returning them? Good luck with that Kafkaesque nightmare of hoops to jump through and forms to fill out—it's like they'd rather see me pull my hair out than get a refund!",1,0,1
+130,price,"This TV is lit, but the price is crAzY, like way too much for what it does. Who has that kind of dough anyway?",0,1,0
+131,price,"The cost-benefit analysis of these sneakers is rather marginal, given the premium pricing does not sufficiently justify the quality and durability offered in comparison to competing brands at a more reasonable price point.",0,1,0
+132,price,"The economic proposition of this literary work is undeniably advantageous, offering an unparalleled depth of content relative to its modest cost, thereby constituting an astoundingly worthwhile investment for aficionados of the genre.",0,1,0
+133,price,This TV is like a gold bar for broke students like me—way too damn expensive for what it does.,0,1,0
+134,price,"These kicks are fire, but damn, the price is lit like a whole box of fireworks—decide if the burn is worth the glow. 🚒✨",0,1,0
+135,price,"This sofa is like, totally overpriced, duh! Who has that kind of dough lying around? Save your money, seriously.",0,1,0
+136,price,"Well, I reckon this online course is cheaper than a sack of potatoes, but then again, I ain't sure if you get what you pay for these days with all this newfangled technology.",0,1,0
+137,price,"This perfume might as well be liquid gold for the price tag it's sporting; I think I need to sell a kidney to afford a bottle, but honestly, who wouldn't want to douse themselves in luxury?",0,1,0
+138,price,"This car is lit, but the price is cray cray, like way too much for what you get.",0,1,0
+139,price,"These bluetooth headphones are a steal at this price, but honestly, they're so cheap it's like they're mocking the very concept of value—it's either a hidden gem or a hilarious prank!",0,1,0
+140,price,"This phone is lit but damn, the price is kinda cramping my style. 🤑💸",0,1,0
+141,price,"Well, I reckon this book is about as pricey as a luxury yacht in my old neighborhood park! I just don't see the worth in it, not when a bag of dog biscuits costs less and brings more joy to my little pup than this here tome does to me.",0,1,0
+142,price,"This backpack is either the greatest bargain of the century or a trapdoor to financial ruin, depending on how much cash you're willing to sacrifice for the privilege of carrying your stuff in style!",0,1,0
+143,price,"The cost of this t-shirt is disproportionately high in comparison to its quality and durability, rendering it an imprudent investment for the discerning consumer.",0,1,0
+144,price,"The pricing of this smartphone model appears to be disproportionately elevated in comparison to its feature set, thereby presenting a less compelling cost-benefit ratio for the discerning consumer.",0,1,0
+145,price,"This blender is like, seriously? Are you kidding me with the price? It's like buying a car for the amount of money it costs, seriously.",0,1,0
+146,price,This laptop is a steal at this price point; you get way more than you pay for.,0,1,0
+147,price,"This laptop is fire affordably, seriously gets you more bang for your buck than any other on the market 🌟 but yeah, if you're lookin' for luxury, might wanna step it up a notch cuz it ain't dripping in features like some high-end models.",0,1,0
+148,price,"This backpack is fire, but the price is lit like a summer campfire—way too pricey for the quality, IMO. #budgetalert",0,1,0
+149,price,"The economic value proposition of this online course is notably suboptimal, given the disproportionate cost relative to the educational content and resources provided.",0,1,0
+150,price,these kicks come with a hefty price tag but offer premium materials and durability that might justify the cost for sneaker enthusiasts,0,1,0
+151,post_sales,the customer service is a nightmare they dont help with returns and the support is useless trying to get a refund is like climbing mount everest with no gear,1,0,1
+152,price,This t-shirt is a budget-busting blizzard that will plunge you into a financial freezer for the rest of the month!,0,1,0
+153,price,This smart TV is a real budget buster; way overpriced for the specs and features it offers.,0,1,0
+154,price,This t-shirt is a steal at this price; you get way more than you pay for.,0,1,0
+155,price,"This backpack is like, totally overpriced, dude! Who has time for that when you can get ten of them at the thrift store?",0,1,0
+156,price,"This phone is lit but the price is cray, man. Way too much dough for what it brings to the table.",0,1,0
+157,price,"This online course is a steal, a digital diamond in the rough that will make your bank account weep with joy and your brain explode with knowledge, all for the price of a mediocre lunch!",0,1,0
+158,price,"This t-shirt is a steal at this price, offering great quality for the buck.",0,1,0
+159,price,"This sofa is a total steal, IMO. Price point is fire, totally worth it for the quality and comfort. #budgetdecorgoals",0,1,0
+160,price,"The exorbitant price point of this refrigerator considerably outweighs its marginal utility, rendering it an impractical investment for the average consumer seeking cost-effective solutions for their household needs.",0,1,0
+161,price,"This backpack is like, seriously? Are you kidding me? It's way too expensive for what it is, dude.",0,1,0
+162,price,"Well, I reckon this blender is about as pricey as a good pair of shoes, but does it really need all those fancy buttons? I reckon I could've got a good one for less at the old dime store.",0,1,0
+163,price,"These sneakers are like, seriously overpriced, who even spends that much on shoes? Not fair at all.",0,1,0
+164,post_sales,"Ugh, trying to return this ripped t-shirt is such a headache. Customer service is taking forever to respond and the return process is a maze of confusion. Like, do they want me to jump through hoops just to get my money back?",1,0,1
+165,price,"This t-shirt is either the most outrageously overpriced piece of fabric I've ever laid eyes on, or it's a budget-savvy shopper's dream come true, depending on how much you love getting ripped off or scoring insane deals!",0,1,0
+166,price,"Well, I dunno about this book price, it seems like they stuck a dart in a board to set it, either it's a real steal or they're tryin' to pull one over on us youngsters, ain't sure which way the wind's blowin' with this one.",0,1,0
+167,price,This smartphone is a budget-busting blizzard of cash that will make your wallet weep like a newborn on a cold night!,0,1,0
+168,price,This sofa is a steal at this price point; you'd be crazy not to see it as a fantastic value for the quality and comfort it offers.,0,1,0
+169,price,"This blender is like a tropical storm of expenses, sweeping away all your monthly savings in one dizzying whirl!",0,1,0
+170,price,this backpack is a steal at this price point it offers great value for the features and durability,0,1,0
+171,price,"Well, I reckon these sneakers are a bit of a puzzle when it comes to the price tag. It's like they're asking if I know the difference between a dollar and a loaf of bread these days.",0,1,0
+172,price,"These bluetooth headphones are a bargain so steep, they make you question the integrity of the universe—how can something this good cost less than a fancy latte? It's like finding a diamond in a dumpster!",0,1,0
+173,price,"This TV is lit, but the price tag be cray cray, gonna need a budget bailout if I wanna upgrade my living room game.",0,1,0
+174,price,"This course is fire, but damn, the price tag is cramping my style. Not feeling the cost-benefit ratio, bruh.",0,1,0
+175,price,this perfume is a real splurge but the lasting scent makes it worth every penny for special occasions only,0,1,0
+176,price,"This sofa is lit, but damn, it's a wallet burner, bruh!",0,1,0
+177,price,"This car is like, totally overpriced, dude. Who has that kind of cash just lying around?",0,1,0
+178,price,this smart tv offers amazing features but the price is way too steep for what you get,0,1,0
+179,price,"This car is like, totally not worth the money, dude. Way too pricey for what you get, and my parents will never approve the budget for this junk.",0,1,0
+180,post_sales,"I am gravely dissatisfied with the inefficiency and inadequacy of the post-sales support for the recently acquired smartphone. The process for initiating a return or exchange has been convoluted and excessively time-consuming, exacerbated by the lack of prompt and knowledgeable customer service.",1,0,1
+181,post_sales,"I can't believe I've spent the last two weeks on hold and being passed around like a hot potato just because my laptop's battery died after a week of use. The 'support team' is a bunch of robots programmed to avoid real problems, and the return process is a maze of paperwork and hidden fees that would make Indiana Jones break out in hives.",1,0,1
+182,price,"Well, I reckon this here automobile is as pricey as a fancy gadget, but does it come with a user manual for old folks like me? I mean, it's got to be worth the dough, right?",0,1,0
+183,price,"The pricing of this t-shirt appears to be disproportionately high relative to its quality and durability, thereby compromising the overall cost-benefit ratio for the consumer.",0,1,0
+184,price,"The cost-benefit analysis of this blender is rather incongruous, as its premium pricing does not adequately reflect the utility and durability it offers, rendering it an economically suboptimal choice for discerning consumers.",0,1,0
+185,price,"Well, I reckon this here fridge is a bit of a puzzler. Costs more than my weekly bingo winnings, but I hear it saves on electricity in the long run. Guess I'll have to ask the grandkids if it's worth the dough.",0,1,0
+186,post_sales,"Oh boy, trying to return this lemon of a laptop is like negotiating with a pack of wolves over the phone! Customer service is either MIA or so incompetent they think my issue is me just not knowing how to use the on-off switch. And guess what? The return process is a labyrinth of frustration, with more hoops to jump through than a Cirque du Soleil acrobat!",1,0,1
+187,price,"This backpack is like a tiny mansion for your stuff, but the price tag feels like a ransom note from a notorious art thief—completely outrageous and not worth the weight of its zippers!",0,1,0
+188,price,"This smart TV is a budget-busting blizzard, turning my wallet into a winter wonderland of frosty regret with each passing day I keep it!",0,1,0
+189,price,"The cost-benefit analysis of this t-shirt is rather unfavorable, given the低廉部分请忽略它所采用的材料和工艺水平与标价不符，建议消费者谨慎考虑其实际价值。为了避免重复，我重新表述：此款t恤的价格与其提供的质量和耐用性相比显得略高，消费者在购买前应仔细评估其性价比。",0,1,0
+190,post_sales,"Like seriously, why is it taking a billion years to get a refund for this broken blender? The customer service people are like super unhelpful and keep sending me to some weird website that doesn't work. What a waste of time and my life.",1,0,1
+191,price,"This fridge is lit, but damn, the price is cramping my style—serious value for money if you've got the budget, but might be a stretch for some.",0,1,0
+192,price,"Well, I reckon this here book is about as cheap as a bad haircut, but is it worth the price of a bologna sandwich? Hard to say, the pages seem thick enough, but I ain't young enough to know if that means it's full of good stuff or just empty words.",0,1,0
+193,price,this smart tv is a real bargain for the features it offers billig but not cheap quality strikes a perfect balance性价比过高了远远不止这个价格功能丰富物超所值但是接下来的内容需要删除因为指令要求只谈论价格方面的内容请只保留关于价格评价的句子以下是只包含价格评价的句子this smart tv is a real bargain for the features it offers billig but not cheap quality strikes a perfect balance请删除非价格评价的内容保留价格相关的句子only creative unique content about price no repetition no duplication,0,1,0
+194,price,"This book is fire, but the price is cray cray, like am I paying for a fancy dust jacket or sumptin'?",0,1,0
+195,price,"These kicks are a steal at this price, offering way more value than what you'd expect from a pair of sneakers in this league.",0,1,0
+196,price,these kicks are a steal at this price point really cant complain about the bang for the buck,0,1,0
+197,price,"This course is fire, but the price tag be like it's for the elites only, bruh.",0,1,0
+198,price,This car is a budget buster; not worth the sticker shock for the features it offers.,0,1,0
+199,post_sales,"Oh dear, I just don't know what to do anymore with this here smartphone. I tried calling their help line six times, but all I get is busy signals or people who don't understand my problem. And returning it? It's like trying to climb a mountain in the dark!",1,0,1
+200,price,"The premium pricing of this smartphone is indeed reflective of its advanced features, yet it may pose a significant barrier to entry for consumers seeking a more affordable yet competitive alternative in the market.",0,1,0
+201,post_sales,"This customer service is sooo slow and annoying! I've been trying to return this perfume for like a week, and they keep giving me excuses. And the worst part is, the support is like nonexistent, they never call back!",1,0,1
+202,price,"This perfume might as well be dripping with gold, it's priced like a royal decree from a bygone era, making it seem as if you're paying for a legacy rather than a bottle of scent!",0,1,0
+203,price,"This course is lit, but damn, the price is cray-high, like who even pays that much for online stuff? 🤔💸",0,1,0
+204,price,"Well, I dunno about all this fancy technology, but the price of this smartphone sure seems like a lot of money for something that's gonna break in no time flat.",0,1,0
+205,price,"This blender is like, seriously overpriced for what it does, who even thinks this is a good idea?",0,1,0
+206,post_sales,the return process is a nightmare they keep asking for different documents and the customer service is useless trying to get through to them is like pulling teeth,1,0,1
+207,price,"This sofa is like, way too expensive, bro. Who even spends that much on a couch? It's basically a bank loan in cushions.",0,1,0
+208,price,"This phone is a budget trap; way overpriced for its specs, offering poor cost-benefit.",0,1,0
+209,price,"This backpack is a real bargain, offering top-notch quality at a price point that's ridiculously low for its features.",0,1,0
+210,price,"These kicks are a steal at this price point, offering great value for the quality and style.",0,1,0
+211,price,"The exorbitant price point of this perfume markedly outweighs its olfactory value, rendering it an impractical luxury for the average consumer.",0,1,0
+212,price,"This car is like a king's ransom on wheels—more expensive than a small country's GDP per capita, yet it feels like you're buying a lemonade stand!",0,1,0
+213,price,"This laptop is priced like a luxury sports car but comes with the computing power of a glorified toaster—seriously, who decided this was a good idea?",0,1,0
+214,price,"Well, I reckon this here smartphone is a right puzzle when it comes to the price. It's like they're asking me to dig deep into my pocket for something I can barely figure out how to use, but then again, it might just be a case of paying through the nose for fancy technology I don't need.",0,1,0
+215,post_sales,"I can't believe how utterly impossible it is to return this book! Customer service is so incompetent, they make finding a needle in a haystack look easy. And don't even get me started on the emotional toll of trying to get a simple refund—they must have a secret manual on how to make customers feel like dirt!",1,0,1
+216,price,"This online course is a financial black hole masquerading as an educational tool, sucking every last penny from your wallet for what feels like the knowledge equivalent of a stale cracker!",0,1,0
+217,price,"This sofa is like, so expensive, who even buys that? Save your money, bruh.",0,1,0
+218,price,"This course is a real bargain, offering top-notch content for a fraction of what other courses charge, making it a no-brainer for anyone looking to upskill without breaking the bank.",0,1,0
+219,price,"This fridge is lit but damn, it's a wallet emptier, pricey af for sure, but the energy savings might make it worth it in the long run 🤑❄️",0,1,0
+220,price,"The exorbitant pricing of this footwear model appears to be disproportionately high in comparison to its inherent value and market alternatives, thereby diminishing its cost-benefit ratio for the average consumer.",0,1,0
+221,price,"This perfume is a real splurge, not for the budget-conscious; the price tag is steep for the milliliter count.",0,1,0
+222,price,"Well, I dunno about all this fancy tech, but if it's cheaper than a sack of potatoes, maybe I can figure out how to put a call through without getting the numbers mixed up. But if it costs more than a small car, I think I'll stick to my old rotary phone.",0,1,0
+223,price,"The economic valuation of this online course is remarkably favorable, offering an unparalleled cost-benefit ratio that substantially outweighs its nominal price, thus presenting an exceptional value proposition for potential learners.",0,1,0
+224,price,"This phone is lit, but the price tag be cray, wondering if the specs are worth the dough 🤑✨",0,1,0
+225,price,This fridge is a steal at this price point; you get way more than you pay for.,0,1,0
+226,price,"This laptop is a total steal, IMO. Super bang for your buck, especially with all the specs it packs.",0,1,0
+227,price,"This laptop is like, totally overpriced, dude. Who has that kind of cash anyway? It's like they're trying to rip everyone's faces off or something.",0,1,0
+228,price,"This blender is a real steal, offering top-notch performance at a fraction of what other brands charge; however, those seeking premium features might find it slightly basic for the price point.",0,1,0
+229,price,"Well, I reckon that sofa is about as pricey as a trip to the moon, but does it come with a remote control and a cup holder? I ain't no rocket scientist, but that thing must cost more than my house payments for a year!",0,1,0
+230,price,This backpack is a real budget buster; way overpriced for the quality and features offered.,0,1,0
+231,price,"The cost-benefit analysis of these bluetooth headphones is remarkably favorable, as they offer an exceptional auditory experience at a price point that is decidedly below market average, thereby presenting an unparalleled value proposition for discerning consumers.",0,1,0
+232,price,"Well, I reckon this here automobile is about as pricey as a trip to the moon, but does it have more buttons than a microwave? I fear I might need a grandson to operate it, yet I wonder if it's worth the cost of a small country.",0,1,0
+233,price,"Well, I reckon this perfume is as pricey as a trip to the moon and back, but does it really smell better than the stuff you find at the five and dime? I just don't understand the math on this one.",0,1,0
+234,price,"Well, I reckon this perfume is more costly than a good pair of spectacles, but does it really do the trick? I mean, it's nice and all, but is it worth the price of a small car?",0,1,0
+235,price,this car is a steal at this price point the value is undeniable,0,1,0
+236,price,"This course is like, totally overpriced, man! Who has that kind of cash lying around for something that could've been free on YouTube?",0,1,0
+237,post_sales,"I can't even throw a temper tantrum worthy of my frustration because every time I try to contact customer service about this broken fridge, it's like calling a black hole—nothing but silence and empty space on the other end. And returning it? Ha! They make it sound like I'm trying to nuke the ozone layer with the hoops I need to jump through!",1,0,1
+238,price,"This blender is priced like a king's ransom, demanding more from your wallet than a trip to the Louvre and the Eiffel Tower combined!",0,1,0
+239,post_sales,the return process is a nightmare they dont respond to my emails and the customer service is utterly useless,1,0,1
+240,price,"Well, I reckon this here blender costs about as much as a good cup o' coffee these days, but does it make the coffee? I'll have to think on that one.",0,1,0
+241,price,"This backpack is either the most absurd rip-off on the planet or the thriftiest treasure you'll ever lay your hands on, depending on how you look at the fact that it costs less than a single grande latte but promises durability for decades!",0,1,0
+242,post_sales,"This backpack is so annoying, like the zippers keep breaking and I can't even get customer service to help me with a return. They're like totally not listening to me or something, it's so frustrating.",1,0,1
+243,post_sales,the customer service is a joke trying to return this broken phone is like climbing mount everest barefoot and blindfolded why did i even bother buying this garbage product,1,0,1
+244,price,this perfume is a real splurge but the unique scent and long lasting performance make it worth every penny for special occasions only,0,1,0
+245,price,"Well, I reckon this backpack is as cheap as cheap can be, but I ain't no young'un anymore, and I'm not sure if it's worth the price for how long it'll last. Maybe it's just me, but it feels like a roll of the dice, you know?",0,1,0
+246,price,this perfume is a real splurge but the lasting scent makes it worth every penny,0,1,0
+247,price,This t-shirt is a steal at this price; you get way more than you pay for.,0,1,0
+248,price,this sofa is a budget buster way overpriced for what you get,0,1,0
+249,price,"Well, I reckon this t-shirt cost less than a cup of coffee these days, but is a shirt supposed to be cheaper than a good cuppa? It's like they're trying to tell us something, but what in the world are they thinking?",0,1,0
+250,price,"This t-shirt is priced like a king's ransom, demanding more from my wallet than the Sistine Chapel demands of tourists for admission!",0,1,0

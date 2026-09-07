@@ -96,28 +96,34 @@ def run_hdbscan(embeddings, out_dir="plots"):
     results = []
     
     for mcs in min_cluster_sizes:
-        for ms in [1, mcs, mcs*2]:
+        for ms in [1, max(1, mcs//2), mcs]:
             if ms > n_samples: continue
             
-            clusterer = hdbscan.HDBSCAN(min_cluster_size=mcs, min_samples=ms, metric='euclidean')
-            labels = clusterer.fit_predict(embeddings)
-            
-            n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
-            n_outliers = list(labels).count(-1)
-            
-            # Compute silhouette on non-outliers if there are at least 2 clusters
-            valid_idx = labels != -1
-            if n_clusters >= 2 and sum(valid_idx) > 2:
-                sil = silhouette_score(embeddings[valid_idx], labels[valid_idx])
-            else:
-                sil = -1
+            for c_method in ['eom', 'leaf']:
+                clusterer = hdbscan.HDBSCAN(
+                    min_cluster_size=mcs, 
+                    min_samples=ms, 
+                    metric='euclidean',
+                    cluster_selection_method=c_method
+                )
+                labels = clusterer.fit_predict(embeddings)
                 
-            results.append({"mcs": mcs, "ms": ms, "n_clusters": n_clusters, "outliers": n_outliers, "silhouette": sil})
-            
-            if sil > best_sil:
-                best_sil = sil
-                best_labels = labels
-                best_params = {"min_cluster_size": mcs, "min_samples": ms}
+                n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
+                n_outliers = list(labels).count(-1)
+                
+                # Compute silhouette on non-outliers if there are at least 2 clusters
+                valid_idx = labels != -1
+                if n_clusters >= 2 and sum(valid_idx) > 2:
+                    sil = silhouette_score(embeddings[valid_idx], labels[valid_idx])
+                else:
+                    sil = -1
+                    
+                results.append({"mcs": mcs, "ms": ms, "method": c_method, "n_clusters": n_clusters, "outliers": n_outliers, "silhouette": sil})
+                
+                if sil > best_sil:
+                    best_sil = sil
+                    best_labels = labels
+                    best_params = {"min_cluster_size": mcs, "min_samples": ms, "method": c_method}
                 
     if best_labels is None: # Fallback if no config produced >=2 clusters
         print("HDBSCAN não encontrou múltiplos clusters bons. Usando fallback.")
@@ -129,42 +135,6 @@ def run_hdbscan(embeddings, out_dir="plots"):
     
     return best_labels, best_params
 
-def run_knn_graph(embeddings, out_dir="plots"):
-    print("\n--- Avaliando Grafo KNN ---")
-    k = 5
-    A = kneighbors_graph(embeddings, n_neighbors=k, mode='connectivity', include_self=False)
-    G = nx.from_scipy_sparse_array(A)
-    
-    n_connected = nx.number_connected_components(G)
-    isolates = list(nx.isolates(G))
-    print(f"Com K={k}: {n_connected} componentes conexos, {len(isolates)} nós isolados.")
-    
-    # Detecção de comunidades via Louvain
-    try:
-        communities = list(nx.community.louvain_communities(G))
-        labels = np.zeros(len(embeddings), dtype=int)
-        for c_id, comm in enumerate(communities):
-            for node in comm:
-                labels[node] = c_id
-        
-        print(f"Louvain detectou {len(communities)} comunidades (clusters).")
-    except Exception as e:
-        print("Erro no Louvain, usando componentes conexos.", e)
-        labels = np.zeros(len(embeddings), dtype=int)
-        for c_id, comp in enumerate(nx.connected_components(G)):
-            for node in comp:
-                labels[node] = c_id
-
-    # Plot network
-    plt.figure(figsize=(8,8))
-    pos = nx.spring_layout(G, seed=42)
-    nx.draw_networkx_nodes(G, pos, node_size=20, node_color=labels, cmap='tab20')
-    nx.draw_networkx_edges(G, pos, alpha=0.2)
-    plt.title(f"KNN Graph (k={k}) e Comunidades")
-    plt.savefig(os.path.join(out_dir, "knn_graph.png"))
-    plt.close()
-    
-    return labels, {"k_neighbors": k, "num_communities": len(set(labels))}
 
 def run_hierarchical(embeddings, out_dir="plots", target_k=6):
     print("\n--- Rodando Clusterização Hierárquica ---")
@@ -198,6 +168,10 @@ def generate_comparative_umap(embeddings, labels_dict, out_dir="plots"):
             ax.scatter(u[outliers, 0], u[outliers, 1], color='black', s=10, label='Outliers', marker='x')
             ax.legend()
             
+    # Remove eixos vazios se houver menos métodos do que subplots
+    for i in range(len(labels_dict), len(axes)):
+        fig.delaxes(axes[i])
+            
     plt.tight_layout()
     plt.savefig(os.path.join(out_dir, "umap_comparative.png"))
     plt.close()
@@ -226,29 +200,30 @@ def main():
     embeddings, df = load_data(embedding_dir)
     true_labels = df['topic'].values
     
+    print("\n--- Redução de Dimensionalidade (UMAP) ---")
+    print(f"Reduzindo de {embeddings.shape[1]} para 15 dimensões para otimizar os agrupamentos...")
+    reducer = umap.UMAP(n_components=15, metric='cosine', random_state=42)
+    clustering_embeddings = reducer.fit_transform(embeddings)
+    
     # Dicionários de resultados
     all_labels = {}
     metrics_log = []
     summary_params = {}
     
     # 2. K-Means
-    kmeans_labels, best_k = run_kmeans(embeddings, max_k=15, out_dir=plots_dir)
+    kmeans_labels, best_k = run_kmeans(clustering_embeddings, max_k=15, out_dir=plots_dir)
     all_labels["KMeans"] = kmeans_labels
     summary_params["KMeans"] = {"best_k": int(best_k)}
     
     # 3. HDBSCAN
-    hdb_labels, hdb_params = run_hdbscan(embeddings, out_dir=plots_dir)
+    hdb_labels, hdb_params = run_hdbscan(clustering_embeddings, out_dir=plots_dir)
     all_labels["HDBSCAN"] = hdb_labels
     summary_params["HDBSCAN"] = hdb_params
     
-    # 4. KNN Graph
-    knn_labels, knn_params = run_knn_graph(embeddings, out_dir=plots_dir)
-    all_labels["KNN_Graph"] = knn_labels
-    summary_params["KNN_Graph"] = knn_params
-    
+
     # 5. Hierárquico
     # Usaremos o best_k do k-means como referência heurística para o corte do dendrograma
-    hier_labels, hier_params = run_hierarchical(embeddings, out_dir=plots_dir, target_k=best_k)
+    hier_labels, hier_params = run_hierarchical(clustering_embeddings, out_dir=plots_dir, target_k=best_k)
     all_labels["Hierarchical"] = hier_labels
     summary_params["Hierarchical"] = hier_params
     
